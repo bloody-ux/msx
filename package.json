@@ -1,7 +1,7 @@
 {
-  "name": "msx",
-  "version": "0.4.1",
-  "description": "JSX for Mithril",
+  "name": "msx-x",
+  "version": "0.1.0",
+  "description": "JSX for Mithril and supports camelNamed events",
   "main": "main.js",
   "dependencies": {
     "commoner": "^0.10.0",
@@ -18,10 +18,10 @@
     "jsx",
     "mithril"
   ],
-  "author": "Jonathan Buchanan <jonathan.buchanan@gmail.com> (https://github.com/insin)",
+  "author": "Youxiang Lu (https://github.com/bloody-ux)",
   "repository": {
     "type": "git",
-    "url": "git://github.com/insin/msx.git"
+    "url": "git://github.com/bloody-ux/msx-x.git"
   },
   "licenses": [
     {

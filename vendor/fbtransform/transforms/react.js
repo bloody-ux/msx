@@ -19,6 +19,8 @@ var quoteAttrName = require('./jsx').quoteAttrName;
 
 var trimLeft = require('./jsx').trimLeft;
 
+var eventsMapping = require('../../event-mapping');
+
 /**
  * Customized desugar processor for React JSX. Currently:
  *
@@ -189,6 +191,9 @@ function visitReactTag(precompile, traverse, object, path, state) {
       utils.append('{', state);
     }
 
+    // supported mapping events name from onClick => onclick
+    name =  eventsMapping[name] || name;
+    
     utils.append(quoteAttrName(name), state);
     utils.append(':', state);
 
